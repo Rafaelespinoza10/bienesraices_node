@@ -46,7 +46,7 @@ app.use('/api', apiRouters);  //APIS
 
 
 //definir un puerto y arrancar el proyecto
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 10000;
 
 app.listen(port, ()=>{
     console.log(`el servidor esta funcionando en el puerto ${port}`);
