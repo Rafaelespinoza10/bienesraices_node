@@ -25,7 +25,7 @@ async function enviarEmailConfirmacion(transport, email, nombre, token,subject,t
      //enviar el email
      try {
         await  transport.sendMail({
-          from:'BienesRaices.com', 
+          from: 'no-reply@bienes-raices.com',
           to:email, 
           subject,
           text,
@@ -43,7 +43,7 @@ async function enviarEmailRecuperacion(transport, email, nombre, token,subject,t
   //enviar el email
   try {
      await  transport.sendMail({
-       from:'BienesRaices.com', 
+      from: 'no-reply@bienes-raices.com',
        to:email, 
        subject,
        text,
