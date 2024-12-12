@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import bcrypt from 'bcrypt';
 
 const usuarios = [
@@ -11,3 +12,17 @@ const usuarios = [
 ]
 
 export default usuarios; 
+=======
+import bcrypt from 'bcrypt'
+
+const usuarios = [
+    {
+        nombre: 'Juan',
+        email: 'juan@juan.com',
+        confirmado: 1,
+        password: bcrypt.hashSync('password', 10)
+    }
+]
+
+export default usuarios
+>>>>>>> 6c306ec (fix email.js)

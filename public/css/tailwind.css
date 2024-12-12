@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .leatflet-container a{
     color:#FFF;
+=======
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.leaflet-container a {
+    color: #FFF;
+>>>>>>> 6c306ec (fix email.js)
 }
