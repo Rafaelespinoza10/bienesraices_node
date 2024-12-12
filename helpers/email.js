@@ -28,7 +28,7 @@ const emailRegistro = async (datos) => {
 async function enviarEmailConfirmacion(transport, email, nombre, token, subject, text) {
   try {
     await transport.sendMail({
-      from: 'bienesraices136@gmail.com',
+      from:  process.env.EMAIL_USER,
       to: email,
       subject,
       text,
@@ -43,7 +43,7 @@ async function enviarEmailConfirmacion(transport, email, nombre, token, subject,
 async function enviarEmailRecuperacion(transport, email, nombre, token, subject, text) {
   try {
     await transport.sendMail({
-      from: 'bienesraices136@gmail.com',
+      from:  process.env.EMAIL_USER,
       to: email,
       subject,
       text,
