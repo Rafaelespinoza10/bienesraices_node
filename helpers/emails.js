@@ -14,7 +14,7 @@ const emailRegistro = async (datos) => {
 
     // Enviar el email
     await transport.sendMail({
-        from: 'no-reply@bienesraices.com', // Asegúrate de que esta dirección sea válida
+        from: 'no-reply@bienes-raices.com',
         to: email,
         subject: 'Confirma tu Cuenta en BienesRaices.com',
         text: 'Confirma tu Cuenta en BienesRaices.com',
@@ -43,7 +43,7 @@ const emailOlvidePassword = async (datos) => {
 
     // Enviar el email
     await transport.sendMail({
-        from: 'BienesRaices.com',
+        from: 'no-reply@bienes-raices.com',
         to: email,
         subject: 'Reestablece tu Password en BienesRaices.com',
         text: 'Reestablece tu Password en BienesRaices.com',
